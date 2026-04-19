@@ -47,9 +47,9 @@ dev = [
 myelinate = "myelinate.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/ANUBAV/myelinate"
-Repository = "https://github.com/ANUBAV/myelinate"
-Issues = "https://github.com/ANUBAV/myelinate/issues"
+Homepage = "https://github.com/AnubhavLakra10/myelinate"
+Repository = "https://github.com/AnubhavLakra10/myelinate"
+Issues = "https://github.com/AnubhavLakra10/myelinate/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/myelinate"]

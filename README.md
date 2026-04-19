@@ -1,6 +1,6 @@
 # myelinate
 
-[![CI](https://github.com/ANUBAV/myelinate/actions/workflows/ci.yml/badge.svg)](https://github.com/ANUBAV/myelinate/actions/workflows/ci.yml)
+[![CI](https://github.com/AnubhavLakra10/myelinate/actions/workflows/ci.yml/badge.svg)](https://github.com/AnubhavLakra10/myelinate/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/myelinate)](https://pypi.org/project/myelinate/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
