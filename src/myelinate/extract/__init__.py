@@ -23,36 +23,20 @@ def extract(path: Path) -> Extraction:
     file_type = classify_file(path)
     match file_type:
         case "code":
+            from myelinate.extract.code import extract_code
+
             return extract_code(path)
         case "doc":
+            from myelinate.extract.doc import extract_doc
+
             return extract_doc(path)
         case "paper":
+            from myelinate.extract.paper import extract_paper
+
             return extract_paper(path)
         case "image":
+            from myelinate.extract.image import extract_image
+
             return extract_image(path)
         case _:
             return Extraction(source_file=str(path))
-
-
-def extract_code(path: Path) -> Extraction:
-    """Extract concepts from source code using tree-sitter AST parsing."""
-    # TODO: implement tree-sitter extraction
-    return Extraction(source_file=str(path))
-
-
-def extract_doc(path: Path) -> Extraction:
-    """Extract concepts from markdown/text documents using Claude."""
-    # TODO: implement Claude-based extraction
-    return Extraction(source_file=str(path))
-
-
-def extract_paper(path: Path) -> Extraction:
-    """Extract concepts from PDF papers using Claude."""
-    # TODO: implement PDF extraction
-    return Extraction(source_file=str(path))
-
-
-def extract_image(path: Path) -> Extraction:
-    """Extract concepts from images using Claude vision."""
-    # TODO: implement vision extraction
-    return Extraction(source_file=str(path))
